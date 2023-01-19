@@ -26,7 +26,7 @@ const AddBook = () => {
    //console.log(e.target.name,'value',e.target.value);
   };
 const sendRequest =  async()=>{
-  await axios .post("http://localhost:5000/books",{
+  await axios .post("https://bookstore-backend-by7z.onrender.com/books",{
     name:String(inputs.name),
     author:String(inputs.author),
     description:String(inputs.description),
